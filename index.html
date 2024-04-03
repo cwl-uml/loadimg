@@ -10,9 +10,11 @@
 const imageDiv = document.getElementById('image');
 
 const getUrlString = location.href;
-const url = new URL(getUrlString);
-const imgSrcParse = url.searchParams.get('imgsrc');
-console.log("imgSrcParse",imgSrcParse);
+const splitParam = getUrlString.split('&');
+
+//const url = new URL(getUrlString);
+//const imgSrcParse = url.searchParams.get('imgsrc');
+console.log("splitParam",splitParam);
 
 // 創建一個Image對象
 const img = new Image();
