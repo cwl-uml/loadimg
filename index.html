@@ -12,6 +12,7 @@ const imageDiv = document.getElementById('image');
 const getUrlString = location.href;
 const url = new URL(getUrlString);
 const imgSrcParse = url.searchParams.get('imgsrc');
+console.log("imgSrcParse",imgSrcParse);
 
 // 創建一個Image對象
 const img = new Image();
