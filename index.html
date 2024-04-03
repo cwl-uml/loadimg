@@ -11,10 +11,12 @@ const imageDiv = document.getElementById('image');
 
 const getUrlString = location.href;
 const splitParam = getUrlString.split('&');
-const combineParam = splitParam.join('&');
-
-//const url = new URL(getUrlString);
-//const imgSrcParse = url.searchParams.get('imgsrc');
+const handleHostname = splitParam[0];
+const hostURL = new URL(handleHostname);
+const imgsrcPrase = hostURL.searchParams.get('imgsrc');
+splitParam[0] = imgsrcPrase;
+const combineParam = splitParam.join('&'); 
+  
 console.log("splitParam",splitParam);
   console.log("combineParam",combineParam);
 
