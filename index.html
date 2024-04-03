@@ -19,9 +19,12 @@ const img = new Image();
 // 將要獲取的圖片的URL賦值給它的src屬性
 img.src = imgSrcParse;
 
+// Wrap with <img>
+const imgHtml = `<img src = ${imgSrcParse}/>`;
+
 // 當圖片加載完成時，將其添加到imageDiv中
 // img.onload = () => {
-imageDiv.appendChild(img);
+imageDiv.appendChild(imgHtml);
 // };
 
 </script>
