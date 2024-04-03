@@ -11,6 +11,7 @@ const imageDiv = document.getElementById('image');
 
 const getUrlString = location.href;
 const splitParam = getUrlString.split('&');
+const combineParam = splitParam.join('&');
 
 //const url = new URL(getUrlString);
 //const imgSrcParse = url.searchParams.get('imgsrc');
@@ -23,7 +24,7 @@ const img = new Image();
 img.src = imgSrcParse;
 
 // Wrap with <img>
-const imgHtml = `<img src = ${imgSrcParse}/>`;
+const imgHtml = `<img src = ${combineParam}/>`;
 
 // 當圖片加載完成時，將其添加到imageDiv中
 // img.onload = () => {
