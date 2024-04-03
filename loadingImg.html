@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Load Image</title>
+</head>
+<body>
+<div id="image"></div>
+
+<script>
+const imageDiv = document.getElementById('image');
+
+const getUrlString = location.href;
+const url = new URL(getUrlString);
+const imgSrcParse = url.searchParams.get('imgsrc');
+
+// 創建一個Image對象
+const img = new Image();
+
+// 將要獲取的圖片的URL賦值給它的src屬性
+img.src = imgSrcParse;
+
+// 當圖片加載完成時，將其添加到imageDiv中
+img.onload = () => {
+imageDiv.appendChild(img);
+};
+
+</script>
+</body>
+</html>
