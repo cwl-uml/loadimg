@@ -34,6 +34,13 @@ img.width = 500;
 // img.onload = () => {
 imageDiv.appendChild(img);
 // };
+  
+//meta tag
+const metaProps = document.createElement('meta');
+metaProps.name = 'image';
+metaProps.image = combineParam;
+metaProps.content = combineParam;
+document.getElementsByTagName('head')[0].appendChild(metaProps);
 
 </script>
 </body>
