@@ -3,6 +3,7 @@
 <head>
   <title>Load Image</title>
   <meta property="og:title" content="Load Image" />
+  <meta property="og:url" content="https://cwl-uml.github.io/loadimg/" />
   <meta property="og:type" content="website" />
 </head>
 <body>
@@ -43,10 +44,10 @@ metaProps.setAttribute('property', 'og:image');
 metaProps.setAttribute('content', combineParam);
 document.head.appendChild(metaProps);
 
-const ogUrlMetaProps = document.createElement('meta');
-ogUrlMetaProps.setAttribute('property', 'og:url');
-ogUrlMetaProps.setAttribute('content', location.href);
-document.head.appendChild(ogUrlMetaProps);
+// const ogUrlMetaProps = document.createElement('meta');
+// ogUrlMetaProps.setAttribute('property', 'og:url');
+// ogUrlMetaProps.setAttribute('content', location.href);
+// document.head.appendChild(ogUrlMetaProps);
 
 </script>
 </body>
