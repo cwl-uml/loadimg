@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>Load Image</title>
+  <meta property="og:title" content="Load Image" />
+  <meta property="og:url" content="https://cwl-uml.github.io/loadimg/" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
 <div id="image"></div>
@@ -37,10 +40,9 @@ imageDiv.appendChild(img);
   
 //meta tag
 const metaProps = document.createElement('meta');
-metaProps.name = 'image';
-metaProps.image = combineParam;
-metaProps.content = combineParam;
-document.getElementsByTagName('head')[0].appendChild(metaProps);
+metaProps.setAttribute('property', 'og:image');
+metaProps.setAttribute('content', combineParam);
+document.head.appendChild(metaProps);
 
 </script>
 </body>
