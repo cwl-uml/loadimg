@@ -4,7 +4,9 @@
   <title>Load Image</title>
   <meta property="og:title" content="Load Image" />
   <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image" content="{{combineParam}}" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{location.href}}" />
 </head>
 <body>
 <div id="image"></div>
@@ -39,15 +41,15 @@ imageDiv.appendChild(img);
 // };
   
 //meta tag
-const metaProps = document.createElement('meta');
-metaProps.setAttribute('property', 'og:image');
-metaProps.setAttribute('content', combineParam);
-document.head.appendChild(metaProps);
+//const metaProps = document.createElement('meta');
+//metaProps.setAttribute('property', 'og:image');
+//metaProps.setAttribute('content', combineParam);
+//document.head.appendChild(metaProps);
 
-const ogUrlMetaProps = document.createElement('meta');
-ogUrlMetaProps.setAttribute('property', 'og:url');
-ogUrlMetaProps.setAttribute('content', location.href);
-document.head.appendChild(ogUrlMetaProps);
+//const ogUrlMetaProps = document.createElement('meta');
+//ogUrlMetaProps.setAttribute('property', 'og:url');
+//ogUrlMetaProps.setAttribute('content', location.href);
+//document.head.appendChild(ogUrlMetaProps);
 
 const desMetaProps = document.createElement('meta');
 desMetaProps.setAttribute('property', 'description');
